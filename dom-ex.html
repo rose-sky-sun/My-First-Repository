@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM  Exercises</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Lab</h1>
+        <h2>Experiment, test and build JavaScript programs!</h2>
+        <p>Tackle common day-to-day app building problems and enhance your JS experience and skills. </p>
+    </header>
+
+    <main>
+<!-- EXERCISE 1 - DROP DOWN MENU -->
+        <section class="exercises drop-down-menu">
+            <div class="section-text">
+                <h2>
+                    Excercise 1:
+                </h2>
+                <p>
+                    Create a dropdown menu that shows and hides its options when clicked.
+                </p>
+            </div>
+           
+            <div class="drop-down">
+                <h3>Clickable Dropdown</h3>
+                <p>Click on the button to access the dropdown menu.</p>
+                <div class="drop-btn-items">
+                    <button class="drop-button">
+                        Dropdown Menu
+                    </button>
+                    <div class="dropDownItems">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- EXERCISE 2 - ADD ROWS TO TABLE -->
+        <section class="exercises add-rows-container">
+             <div class="section-text">
+                <h2>
+                    Excercise 2:
+                </h2>
+                <p>
+                    Use JavaScript to add rows to an empty table.
+                </p>
+                <br>
+                <h3>Rows Maker</h3>
+                <p>Click on the button add rows.</p>
+            </div>
+            <div class="function-container">
+                
+                <button type="button" id="add-row-button">
+                    Add a row to the table.
+                 </button>
+                <table></table>
+            </div>
+      
+        </section>
+<!-- EXERCISE 3 - PROGRESS BAR UPDATE -->
+         <section class="exercises progress-bar-container">
+            <div class="section-text">
+                <h2>
+                    Excercise 3:
+                </h2>
+                <p>
+                    Create a progress bar that updates width on task completion.
+                </p>
+                <br>
+                <h3>Progress Bar</h3>
+                <p>Click on the complete task button to update the progress bar.</p>
+            </div>
+           
+            <div class="progress-bar-container">
+                <p>
+                    <span class="completed-tasks">0</span>
+                    /
+                    <span class="total-tasks">0</span>
+                    Tasks Complete!
+                </p>
+                <div class="progress-bar">
+                    <div class="progress-bar-filled"></div>
+                </div>
+                <div class="tasks-div">
+                    <button class="task-btn">Complete Task</button>
+                </div>
+             
+            </div>
+        </section>
+<!-- EXERCISE 4 - SLIDESHOW -->
+        <section class="exercises slideshow-section">
+             <div class="section-text">
+                <h2>
+                    Excercise 4:
+                </h2>
+                <p>
+                    Use JavaScript to create a slideshow that changes the displayed image when a next or previous button is clicked. Add an animation to the sliding for extra credit!
+                </p>
+                <br>
+                <h3>Slideshow</h3>
+                <p>Change the image shown with next or previous buttons.</p>
+            </div>
+            <div class="function-container slideshow-container">
+    <!-- divs for images with captions -->
+                <div class="slideImages fade">
+                    <div class="imageNumber">1 / 5</div>
+                    <img src="images/butterfly-main.png" style="width:30rem">
+                    <div class="imageCaption">Journey to the world of how Butterflies came to be...</div>
+                </div>
+    <!-- divs for images with captions -->             
+                <div class="slideImages fade">
+                    <div class="imageNumber">2 / 5</div>
+                    <img src="images/butterfly-eggs.png" style="width:30rem">
+                    <div class="imageCaption">Eggs are laid on plants by the adult female butterfly. </div>
+                </div>
+    <!-- divs for images with captions -->             
+                <div class="slideImages fade">
+                    <div class="imageNumber">3 / 5</div>
+                    <img src="images/butterfly-larva.png" style="width:30rem">
+                    <div class="imageCaption">Now a caterpillar, its main focus is to eat and grow! </div>
+                </div>
+    <!-- divs for images with captions -->             
+                <div class="slideImages fade">
+                    <div class="imageNumber">4 / 5</div>
+                    <img src="images/butterfly-pupa.png" style="width:30rem">
+                    <div class="imageCaption">A full grown caterpillar stops eating and undergoes rapid growth and transformation.</div>
+                </div>
+    <!-- divs for images with captions -->             
+                <div class="slideImages fade">
+                    <div class="imageNumber">5 / 5</div>
+                    <img src="images/butterfly-adult.png" style="width:30rem">
+                    <div class="imageCaption">The metamorphosis is complete! The adult butterfly's job is to mate and lay eggs thus the cycle continues... </div>
+                </div>
+    <!-- next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+    <!-- slide dots -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>            
+        </section>
+
+ <!-- EXERCISE 5 - MESSAGE IN A BUTTON -->
+        <section class="exercises message-button-container">
+             <div class="section-text">
+                <h2>
+                    Excercise 5:
+                </h2>
+                <p>
+                    Create a button log a message when it's clicked.
+                </p>
+                <br>
+                <h3>Message Button</h3>
+                <p>Click on the button to access your message...</p>
+            </div>
+            <div class="function-container">
+                <button id="test-button">Click if you 🩷 coding!</button>
+                <p id="test-message"></p>
+            </div>
+            <div class="function-container">
+                <div class="btn-mes-text">
+                    Important programmer wisdom will reveal itself after confirmation:
+                </div>
+                <button class="button" id="button1" value="false">I will study and never stop learning!</button>
+                <button class="button" id="button2" value="false">I  will perservere and work hard!</button>
+                <button class="button" id="button3" value="false">I will never give up!</button>
+                <button class="button" id="button4" value="false">I can balance gaming & programming</button>
+               
+                <div id="reveal-message-container">
+                   <p id="reveal-message"></p>
+                </div>
+            </div>
+      
+        </section>
+
+
+    </main>
+    
+
+    <script src="dom.js"></script>
+</body>
+</html>
+
